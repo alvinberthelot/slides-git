@@ -1,1 +1,77 @@
 == Introduction à Git
+
+<<<
+
+=== Tout est histoire
+
+[quote, 'Petit Robert (2007)']
+____
+L'histoire est « connaissance et récit des événements du passé, des faits relatifs à l'évolution de l'humanité (d'un groupe social, d'une activité humaine), qui sont dignes ou jugés dignes de mémoire ; les événements, les faits ainsi relatés ».
+____
+
+C'est une très bonne définition qui peut s'appliquer à autres chose que l'humanité :
+
+- Votre vie ou celle d'autres personnes
+- Un livre, un film, une série
+- Un logiciel informatique
+- etc.
+
+<<<
+
+=== Une histoire en synthèse
+
+- Événements
+- Évolution
+- Jugés dignes de mémoire
+
+image::content/img/slide-git-001.svg[width=100%, scaledwidth=100%, align=center]
+
+<<<
+
+=== Une histoire pour un logiciel informatique
+
+On peut très bien ces concepts au cycle de vie d'un logiciel informatique.
+
+image::content/img/slide-git-002.svg[width=100%, scaledwidth=100%, align=center]
+
+<<<
+
+=== Outils de gestion de version
+
+Pour répondre à ce besoin d'historiser un logiciel informatique, les *outils de gestion de version* sont apparus.
+
+Ils permettent :
+
+- De créer des "commits" qui sont la représentation des *événements*
+- Suivre l'*évolution* en listant les "commits" avec un système d'horodatage
+- Les "commits" sont *jugés dignes de mémoire* par les développeurs et cette responsabilité leur appartient
+
+<<<
+
+=== Les outils du marché
+
+Ils existent plusieurs outils de gestion de version sur le marché, ils varient principalement selon :
+
+- Le *mode* de fonctionnement (*centralisé* ou *décentralisé*)
+- La *licence*
+- L'*adoption* auprès de la communauté et au sein des entreprises
+
+Les principaux
+
+- *Git*
+- Mercurial
+- Subversion (SVN)
+- ClearCase
+- CVS
+
+<<<
+
+=== Git c'est quoi ?
+
+image::content/img/git.svg[width=100%, scaledwidth=50%, align=center]
+
+https://git-scm.com/[Git] est un *outil de gestion de version* qui fonctionne selon un *mode décentralisé*.
+
+Il s'agit d'un *logiciel libre* créé en 2005 par Linus Torvalds.
+
+Il est *très largement utilisé et maintenu par la communauté*.

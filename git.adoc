@@ -24,9 +24,6 @@
 include::intro-license.adoc[]
 
 <<<
-include::content/partials/git-history.adoc[]
-
-<<<
 include::content/partials/git-introduction.adoc[]
 
 <<<
