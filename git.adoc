@@ -17,11 +17,29 @@
 :urlRepository: https://github.com/alvinberthelot/slides-git
 
 
-= git
+= Git
 {author}
 
 <<<
 include::intro-license.adoc[]
+
+<<<
+include::content/partials/git-history.adoc[]
+
+<<<
+include::content/partials/git-introduction.adoc[]
+
+<<<
+include::content/partials/git-local.adoc[]
+
+<<<
+include::content/partials/git-shared.adoc[]
+
+<<<
+include::content/partials/git-great-features.adoc[]
+
+<<<
+include::content/partials/git-providers.adoc[]
 
 <<<
 include::license.adoc[]
