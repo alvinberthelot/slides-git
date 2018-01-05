@@ -27,6 +27,9 @@ include::intro-license.adoc[]
 include::content/partials/git-introduction.adoc[]
 
 <<<
+include::content/partials/handson/git-install.adoc[]
+
+<<<
 include::content/partials/git-local.adoc[]
 
 <<<

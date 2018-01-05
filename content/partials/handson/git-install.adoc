@@ -1,0 +1,13 @@
+image::content/img/programming_meme.png[width=100%, scaledwidth=35%, align=center]
+
+=== Exercices
+
+Notre premier objectif est d'https://git-scm.com/downloads[installer Git] sur sa machine, puis de s'assurer ensuite que le logiciel est opérationnel depuis une ligne de commande.
+
+```shell
+
+git --version
+
+```
+
+WARNING: Certains éditeurs vous donnent accès aux fonctionnalités de Git par le biais de leur interface. *Il est primordial d'apprendre à utiliser Git avec la ligne de commande pour bien assimiler les concepts*.
