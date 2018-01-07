@@ -33,13 +33,16 @@ include::content/partials/handson/git-install.adoc[]
 include::content/partials/git-local.adoc[]
 
 <<<
-include::content/partials/git-shared.adoc[]
+include::content/partials/handson/git-iniT.adoc[]
 
-<<<
-include::content/partials/git-great-features.adoc[]
+//<<<
+//include::content/partials/git-shared.adoc[]
 
-<<<
-include::content/partials/git-providers.adoc[]
+//<<<
+//include::content/partials/git-great-features.adoc[]
+
+//<<<
+//include::content/partials/git-providers.adoc[]
 
 <<<
 include::license.adoc[]

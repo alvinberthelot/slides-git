@@ -24,15 +24,15 @@ C'est une très bonne définition qui peut s'appliquer à autres chose que l'hum
 - Évolution
 - Jugés dignes de mémoire
 
-image::content/img/slide-git-001.svg[width=100%, scaledwidth=100%, align=center]
+image::content/img/yed/slide-git-introduction-001.svg[width=100%, scaledwidth=100%, align=center]
 
 <<<
 
 === Une histoire pour un logiciel informatique
 
-On peut très bien ces concepts au cycle de vie d'un logiciel informatique.
+On peut très bien appliquer ces concepts au cycle de vie d'un logiciel informatique.
 
-image::content/img/slide-git-002.svg[width=100%, scaledwidth=100%, align=center]
+image::content/img/yed/slide-git-introduction-002.svg[width=100%, scaledwidth=100%, align=center]
 
 <<<
 
