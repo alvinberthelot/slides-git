@@ -1,0 +1,14 @@
+image::content/img/programming_meme.png[width=100%, scaledwidth=35%, align=center]
+
+=== Exercices
+
+1. Vous devez créer un répertoire spécifique pour le site et l'initialiser avec Git
+2. Assurez vous d'avoir un dépot Git avec +git status+.
+3. Vous devez ajouter un fichier index.html avec un titre (h1) et un paragraphe (p).
+4. Vous devez commiter le fichier créé
+5. Vous devez ajouter un fichier main.css mettant en forme les paragraphes en bleu et relier ce ficher CSS au fichier HTML précédemment créé.
+6. Vous devez commiter ces fichiers.
+7. Vous devez ajouter un fichier main.js affichant "Hello world !" dans la console JavaScript et relier ce ficher CSS au fichier HTML précédemment créé.
+8. Vous devez ajouter un style CSS pour mettre la balise h1 en rouge puis mettez le fichier concerné en attente pour le prochain commit.
+9. Vous devez modifier le style CSS pour mettre les paragraphes en voilet, puis utilisez la commande +git status", que constatez vous ?
+10. Vous devez afficher l'historique complet des commits.

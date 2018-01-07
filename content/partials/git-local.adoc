@@ -1,0 +1,128 @@
+== Écrire une histoire avec Git
+
+<<<
+
+=== Initialiser une histoire avec Git
+
+Initialiser une histoire pour un logiciel informatique correspond à observer un répertoire avec tout ce qui va s'y passer :
+
+- *Ajout* d'un fichier au sein du répertoire
+- *Modification* d'un fichier au sein du répertoire
+- *Suppression* d'un fichier au sein du répertoire
+
+Cette opération s'effectue avec la commande +git init+.
+
+```shell
+
+git init
+
+```
+
+<<<
+
+=== Statut d'un dépôt Git
+
+Il est possible de *savoir si un répertoire a déjà été initialisé avec Git* ou pas.
+
+Comme il est possible de savoir si il y a eu des *ajouts, modifications ou suppressions de fichiers au sein du répertoire*.
+
+Cette opération s'effectue avec la commande +git status+.
+
+```shell
+
+git status
+
+```
+
+<<<
+
+=== Les différentes zones au sein du répertoire
+
+Un répertoire suivi avec Git se décompose en 3 zones :
+
+- La zone "copie de travail" (*_working tree_* en anglais)
+- La zone "en attente" (*_staged_* en anglais)
+- La zone "dépôt" (*_repository_* en anglais)
+
+<<<
+
+=== Les différents états des fichiers
+
+La commande de statut fait apparaître les différents états des fichiers au sein du dépôt :
+
+- Fichier non indexé / suivi (*untracked* en anglais)
+- Fichier indexé mais non modifié (*unmodified* en anglais)
+- Fichier indexé et modifié (*modified* en anglais)
+- Fichier en attente de commit (*staged* en anglais)
+
+WARNING: Un même fichier peut avoir 2 états en simultanée dans certaines conditions.
+
+<<<
+
+=== Passer d'un état à un autre
+
+image::content/img/git-lifecycle.png[width=100%, scaledwidth=100%, align=center]
+
+<<<
+
+=== Indéxer un fichier 
+
+Indéxer un fichier permet de le préparer pour un futur commit (une "mise en attente"), cette action est nécessaire si il est dans un état +untracked+ ou +modified+.
+
+Cette opération s'effectue avec la commande +git add+ où il faut mentionner en argument le(s) fichier(s) à ajouter.
+
+```shell
+
+git add index.html // <1>
+
+git add index.html main.css  // <2>
+
+git add *.js // <3>
+
+git add pictures/*  // <4>
+
+```
+<1> ajoute un unique fichier +index.html+
+<2> ajoute les fichier +index.html+ et +main.css+
+<3> ajoute tous les fichiers avec une extension +.js+
+<4> ajoute tous les fichiers se trouvant dant le répertoire +dist+
+
+<<<
+
+=== "Commiter" un fichier
+
+Une fois les fichiers préparés, il faut les "commiter" / enregistrer dans le dépôt.
+
+Cette opération s'effectue avec la commande +git commit+ généralement suivi d'une option +-m+ pour renseigner le message associé au commit.
+
+```shell
+
+git commit -m "Création site"
+
+```
+
+image::content/img/yed/slide-git-commit-001.svg[width=100%, scaledwidth=50%, align=center]
+
+<<<
+
+=== 1 commit, 2 commits, 3 commits ...
+
+En continuant à ajouter, modifier et supprimer des fichiers et en commitant ces changements au fur et à mesure, on constribue à l'*évolution du logiciel*, on *construit son histoire*.
+
+image::content/img/yed/slide-git-commit-002.svg[width=100%, scaledwidth=100%, align=center]
+
+<<<
+
+=== Lire une histoire avec Git
+
+Une fois l'histoire écrite il est tout à fait possible de relire cette histoire avec tous les événements / commits qui s'y sont déroulés.
+
+Cette opération s'effectue avec la commande +git log+.
+
+```shell
+
+git log
+
+```
+
+TIP: L'option +--online+ devrait vous permettre d'y voir plus clair avec +git log+.
