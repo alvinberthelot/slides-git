@@ -237,7 +237,7 @@
           <y:Geometry height="30.0" width="120.0" x="660.0" y="285.0"/>
           <y:Fill color="#CCCCCC" transparent="false"/>
           <y:BorderStyle hasColor="false" raised="false" type="dashed_dotted" width="2.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="88.09375" x="15.953125" y="5.93359375">Premier travail<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="74.763671875" x="22.6181640625" y="5.93359375">Refonte SEO<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
