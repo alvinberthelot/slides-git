@@ -1,0 +1,18 @@
+image::content/img/programming_meme.png[width=100%, scaledwidth=35%, align=center]
+
+=== Exercices
+
+Reprenez le répertoire utilisé précédemment.
+
+1. Vous devez ajouter un paragraphe mentionnant "Entreprise blobla" dans le fichier index.html.
+2. Vous devez commiter cette modification. Imaginons que ce site est livré au client.
+3. Vous devez créer une branche "footer" et positionnez vous dessus.
+4. Vous devez ajouter un footer dans le fichier index.html, celui-ci doit contenir le paragraphe "Entreprise blabla, tous droits réservés".
+5. Vous devez commiter cette modification.
+6. Vous devez ajouter un style CSS pour mettre le footer en fond orange.
+7. Vous devez commiter cette modification.
+8. Repositionnez vous sur la branche "master".
+9. Vous devez ajouter un header dans le fichier index.html, celui-ci doit contenir le mot "Navigation".
+10. Vous devez commiter cette modification.
+11. Vous vous apercevez d'une erreur, il aurait fallu écrire blabla et non blobla dans la version livrée au client. Positionnez vous sur la version livrée au client puis corrigez l'erreur.
+12. Vous devez poser un tag "v1.0.0" sur la version corrigée.

@@ -1,0 +1,148 @@
+== Une histoire, une infinité d'alternatives
+
+<<<
+
+=== Univers parallèles
+
+Une histoire à en soit un déroulement très linéaire, mais il est possible d'imaginer qu'elle aurait pu se dérouler autrement. 
+
+image::content/img/yed/slide-git-branches-001.svg[width=100%, scaledwidth=100%, align=center]
+
+<<<
+
+=== Tronc commun
+
+La différence entre 2 alternatives d'une histoire et 2 histoires distinctes, c'est que *les alternatives ont forcément un tronc commun d'événements*. 
+
+image::content/img/yed/slide-git-branches-002.svg[width=100%, scaledwidth=100%, align=center]
+
+<<<
+
+=== Une infinité d'alternatives
+
+Il est possible de créer *une infinité d'alternatives*, chacune pouvant démarrer à n'importe quel moment.
+
+image::content/img/yed/slide-git-branches-003.svg[width=100%, scaledwidth=100%, align=center]
+
+<<<
+
+=== Les branches
+
+Il est possible de créer ces alternatives pour un logiciel informatique avec les outils de gestion de version, on appelle cela *une branche*.
+
+Cette opération s'effectue avec la commande +git branch+ suivi du nom de la branche.
+
+```shell
+
+git branch rwd
+
+```
+
+Il faut d'ailleurs noter que par défaut on se situe déjà sur une branche, il s'agit de +master+ c'est la branche par défaut.
+
+image::content/img/yed/slide-git-branches-004.svg[width=100%, scaledwidth=100%, align=center]
+
+<<<
+
+=== Se positionner sur une branche
+
+Pour écrire sur la nouvelle branche, *il faut se positionner dessus*.
+
+Cette opération s'effectue avec la commande +git checkout+ suivi du nom de la branche.
+
+```shell
+
+git checkout rwd
+
+```
+
+image::content/img/yed/slide-git-branches-005.svg[width=100%, scaledwidth=100%, align=center]
+
+TIP: Il est possible créer une branche et de se positionner directement dessus avec la commande +git checkout -b nom_de_la_branche+.
+
+<<<
+
+=== Continuer une branche
+
+Il est alors possible d'écrire l'histoire de manière alternative en y ajoutant des commits.
+
+image::content/img/yed/slide-git-branches-006.svg[width=100%, scaledwidth=100%, align=center]
+
+<<<
+
+=== Plusieurs branches en parallèle
+
+On peut très bien continuer à construire plusieurs branches en parallèle.
+
+image::content/img/yed/slide-git-branches-007.svg[width=100%, scaledwidth=100%, align=center]
+
+Donc finalement avec Git une histoire *n'est pas si linéaire* ...
+
+<<<
+
+=== Les branches quel intérêt ?
+
+Les branches sont intéressantes car elles permettent d'avoir plusieurs alternatives en parallèle, cela permet de travailler sur des versions cloisonnées pour :
+
+- Travailler sur une fonctionnalité
+- Travailler sur un refactoring
+- Ajouter une correction
+
+D'autant que l'on peut créer une branche depuis un commit passé.
+
+image::content/img/yed/slide-git-branches-008.svg[width=100%, scaledwidth=100%, align=center]
+
+<<<
+
+=== Se positionner sur un commit
+
+Au même titre que l'on peut se positionner sur une branche, il est possible de se positionner sur un commit avec la commande +git checkout+.
+
+Encore faut-il pouvoir indiquer sur quel commit on souhaite se positionner, 2 approches sont possibles :
+
+- Récupérer l'identifiant unique du commit, son *SHA1*
+- Utiliser un *tag* précédemment posé sur un commit
+
+<<<
+
+=== SHA1 kézako ?
+
+Le contenu de chaque commit peut être représenté par un objet, chaque objet peut représenté par un identifiant unique via un algorithme de hachage, SHA1 en est un.
+
+Chaque commit une fois réalisé peut donc être identifié par une chaîne de 40 caractères, on les retrouve facilement avec la commande +git log+.
+
+On utilise généralement la version raccourcie du SHA1 (seulement 7 caractères), que l'on retrouve avec la commande +git log --oneline+.
+
+Une fois le SHA1 du commit connu, il est possible de se positionner dessus.
+
+Cette opération s'effectue avec la commande +git checkout+ suivi du nom de la branche.
+
+```shell
+
+git checkout sha1_du_commit
+
+```
+
+=== Un tag kézako ?
+
+En plus des SHA1, chaque commit peut être marqué une ou une plusieurs fois via des tags.
+
+Les tags permettent de marquer explicitement un état ceci afin de retrouver facilement cet état.
+
+Cette opération s'effectue avec la commande +git tag+ suivi du nom du tag.
+
+```shell
+
+git tag v1.4.8
+
+```
+
+Une fois le tag désiré connu, on se fiche un peu du commit concerné, on se positionne directement sur le tag.
+
+Cette opération s'effectue avec la commande +git checkout+ suivi du nom du tag.
+
+```shell
+
+git checkout v1.4.8
+
+```
