@@ -1,0 +1,62 @@
+== Fusionner les alternatives
+
+<<<
+
+=== La fusion d'une branche
+
+Dans le cas d'un logiciel informatique, créer une infinités d'alternatives est intéressant mais cela le devient encore plus lorsqu'on peut fusionner ces alternatives.
+
+image::content/img/yed/slide-git-merge-001.svg[width=100%, scaledwidth=100%, align=center]
+
+Cette opération s'effectue avec la commande +git merge+ suivi du nom de la branche que l'on souhaite fusionner.
+
+```shell
+
+git merge rwd
+
+```
+
+WARNING: Pour fusionner sur une branche, il faut être positionné sur cette branche.
+
+<<<
+
+=== Fusionner, pas toujours si simple
+
+Git est assez intelligent pour fusionner directement des fichiers qui ont pu évoluer dans des branches si cela n'est pas conflictuel.
+
+image::content/img/yed/slide-git-merge-002.svg[width=100%, scaledwidth=100%, align=center]
+
+Si ça l'est, la fusion ne peut s'effectuer tant que les conflits n'ont pas été réglé.
+
+Il n'y a pas de magie, l'arbitrage d'un conflit sur un fichier ne peut se faire que par une intervention humaine.
+
+<<<
+
+=== Régler un conflit, c'est quoi au juste ?
+
+Régler un conflit consiste à créer des arrangements pour que 2 versions divergentes (A et B) d'un même fichier puissent à nouveau être compatibles.
+
+Ces arrangements peuvent être de différentes sortes :
+
+- La version A écrase la version B, ou inversement.
+- Les versions A et B participent à la création d'une nouvelle version C.
+- Une nouvelle version C totalement indépendante est créée.
+
+Quel que soit le type d'arrangement choisi, cela génère nécessairement un commit "de merge".
+
+WARNING: Lors de l'arbitrage d'un conflit il faudra penser à indexer (+git add+) et commiter (+git commit+) les fichiers pour finir la fusion.
+
+<<<
+
+=== Le "Fast Forward"
+
+Si l'histoire est restée linéaire, le commit de merge est-il indispensable ?
+
+image::content/img/yed/slide-git-merge-003.svg[width=100%, scaledwidth=100%, align=center]
+
+Cette stratégie s'appelle le "Fast Forward" :
+
+- *Avantage* : la lisibilité de l'histoire de la branche principale redevienne plus directe.
+- *Inconvénient* : on perd facilement la trace de la branche qui était à l'origine des commits.
+
+TIP: Il est possible de ne pas l'utiliser avec l'option +--no-ff+.

@@ -41,6 +41,12 @@ include::content/partials/git-branches.adoc[]
 <<<
 include::content/partials/handson/git-branches.adoc[]
 
+<<<
+include::content/partials/git-merge.adoc[]
+
+<<<
+include::content/partials/handson/git-merge.adoc[]
+
 //<<<
 //include::content/partials/git-shared.adoc[]
 
