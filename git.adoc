@@ -47,8 +47,11 @@ include::content/partials/git-merge.adoc[]
 <<<
 include::content/partials/handson/git-merge.adoc[]
 
-//<<<
-//include::content/partials/git-shared.adoc[]
+<<<
+include::content/partials/git-shared.adoc[]
+
+<<<
+include::content/partials/handson/git-shared.adoc[]
 
 //<<<
 //include::content/partials/git-great-features.adoc[]

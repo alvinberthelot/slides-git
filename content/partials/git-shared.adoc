@@ -1,1 +1,119 @@
 == Partager une histoire avec Git
+
+<<<
+
+=== Partager une histoire
+
+Avoir une histoire et l'écrire est une chose primordiale.
+
+Mais dans le cadre d'un logiciel, il est très rare que celle-ci soit la responsabilité d'une seule personne.
+
+Très souvent un logiciel se construit avec l'aide de plusieurs personnes que ce soit à un instant t ou tout au long de la vie du projet.
+
+Il faut donc être capable :
+
+- De laisser d'autres personnes récupérer l'histoire (la même pour tous)
+- De laisser d'autres personnes participer à l'histoire
+
+Il faut donc *centraliser* l'histoire. Git permet de centraliser une histoire mais de façon décentralisée.
+
+<<<
+
+=== Centralisé Vs Décentralisé
+
+Un dépôt centralisé ne permet pas de récupérer une version des fichiers à un instant t, contrairement au décentralisé qui récupère l'ensemble du dépôt.
+
+Cela à de nombreux avatages :
+
+- Un dépôt décentralisé n'est pas un SPOF
+- On peut travailler sur un dépôt (avec toute son histoire) sans avoir de connexion
+- Gain de performance concernant la latence réseau
+- On peut peaufiner un dépôt local avant de le partager
+
+<<<
+
+=== Décentralisé, oui mais ...
+
+image::content/img/decentralized.png[width=100%, scaledwidth=75%, align=center]
+
+<<<
+
+=== Récupérer une histoire
+
+Git permet de récupérer (ou cloner) une histoire avec la commande +git clone+ suivie de l'adresse du dépôt (sous forme d'URL).
+
+```shell
+
+git clone https://github.com/alvinberthelot/git_2018_B1
+
+```
+
+Le dépôt est accessible si son accès en lecture est publique, un dépôt peut très bien être masqué en privé.
+
+IMPORTANT: Avec la commande +clone+ on récupère les sources comme dépôt local mais on associe directement un dépôt distant qui par défaut s'appelle "origin".
+
+<<<
+
+=== Les dépôts distants
+
+Un dépôt local peut avoir plusieurs dépôts distants mais également aucun selon la manière dont le dépôt local a été initialisé.
+
+- La commande +git init+ initialise un dépôt local mais pas de dépot distant
+- La commande +git clone+ initialise un dépôt local en fonction d'un dépot distant, ce dépôt distant est par convention nommé "origin"
+- Il est possible d'ajouter d'autres dépôts distants avec la commande +git remote add+
+
+La commande +git remote+ permet de connaître les dépots distants liés à un dépôt local.
+
+```shell
+
+git remote
+
+```
+
+TIP: L'option +-v+ permet de connaître l'URL des dépôts distants.
+
+<<<
+
+=== Ajouter un dépôt distant
+
+La commande +git remote add+ suivie d'un nom et d'une URL permet d'ajouter un dépôt distant avec un nom précis.
+
+```shell
+
+git remote add alvin https://github.com/alvinberthelot/git_2018_B1
+
+```
+
+<<<
+
+=== Se synchroniser avec un dépôt distant
+
+La commande +git fetch+ suivie du nom du dépôt et de la branche désirée permet de récupérer les fichiers *sans fusion*.
+
+```shell
+
+git fetch origin master
+
+```
+
+La commande +git pull+ suivie du nom du dépôt et de la branche désirée permet de récupérer les fichiers *avec fusion*.
+
+```shell
+
+git pull origin master
+
+```
+
+<<<
+
+=== Contribuer à un dépôt distant
+
+La commande +git push+ suivie du nom du dépôt et de la branche désirée permet d'envoyer les fichiers.
+
+```shell
+
+git push origin master
+
+```
+
+IMPORTANT: Si la lecture d'un dépôt est publique, ce n'est pas la même histoire concernant l'écriture.

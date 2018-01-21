@@ -8,7 +8,7 @@ Dans le cas d'un logiciel informatique, créer une infinités d'alternatives est
 
 image::content/img/yed/slide-git-merge-001.svg[width=100%, scaledwidth=100%, align=center]
 
-Cette opération s'effectue avec la commande +git merge+ suivi du nom de la branche que l'on souhaite fusionner.
+Cette opération s'effectue avec la commande +git merge+ suivie du nom de la branche que l'on souhaite fusionner.
 
 ```shell
 

@@ -1,0 +1,25 @@
+image::content/img/programming_meme.png[width=100%, scaledwidth=35%, align=center]
+
+=== Exercices
+
+Dépot 1
+
+1. Vous devez créer un nouveau dépôt vide sur votre compte GitHub.
+2. Vous devez ajouter ce dépôt distant à votre dépôt local.
+3. Vous devez "pousser" votre code de votre dépôt local sur votre nouveau dépôt distant.
+
+<<<
+
+Dépot 2
+
+1. Vous devez récupérer votre dépôt distant git_2018_B1 en local.
+2. Vous devez lister les dépôts distants.
+3. Vous devez ajouter un dépôt distant "alvin" avec l'URL https://github.com/alvinberthelot/git_2018_B1.
+4. Vous devez lister les dépôts distants.
+5. Vous devez créer une branche "tomato" et positionnez vous dessus.
+6. Vous devez modifier le fichier style.css pour que les liens (balise a) s'affichent en "tomato" au survol, puis committez.
+7. Vous devez "pousser" votre code de votre dépôt local sur votre dépôt distant sur la branhce tomato.
+8. Vous devez "pousser" votre code de votre dépôt local sur le dépôt distant "alvin" sur la branhce tomato. Que constatez vous ?
+9. Vous devez vous repositonnez sur la branche master.
+10. Vous devez fusionner la branche tomato avec la branche master.
+11. Vous devez récupérer les dernières modifications de la branche master du dépôt distant et les fusionner.
