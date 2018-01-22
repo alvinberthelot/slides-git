@@ -125,4 +125,4 @@ git log
 
 ```
 
-TIP: L'option +--online+ devrait vous permettre d'y voir plus clair avec +git log+.
+TIP: L'option +--oneline+ devrait vous permettre d'y voir plus clair avec +git log+.
