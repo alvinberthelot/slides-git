@@ -6,7 +6,7 @@ image::content/img/programming_meme.png[width=100%, scaledwidth=35%, align=cente
 2. Vous devez modifier le fichier main.js pour qu'il affiche "Bonjour Git" désormais, puis committez.
 3. Repositionnez vous sur la branche "master".
 4. Vous devez modifier le fichier main.js pour qu'il ouvre une pop-up via alert('Hello Git !') désormais, puis committez.
-5. Vous devez fusionner la branche logjs avec la branche master.
+5. Vous devez fusionner la branche logjs sur la branche master.
 6. Vous devez créer une branche "stylelink" et positionnez vous dessus.
 7. Vous devez modifier le fichier style.css pour que les liens (balise a) s'affichent en cyan, puis committez.
 8. Vous devez modifier le fichier style.css pour que les liens (balise a) s'affichent en bleu au survol, puis committez.
