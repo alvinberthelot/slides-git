@@ -1,0 +1,72 @@
+== Réécrire l'histoire
+
+<<<
+
+=== Revoir le tronc commun
+
+Si une branche a été tirée à un instant t sur un commit, elle aurait très bien pu être tirée avant ou après.
+
+image::content/img/yed/slide-git-rebase-001.svg[width=100%, scaledwidth=100%, align=center]
+
+On cherche généralement à faire (re)partir une branche d'un commit plus tardif pour que celle-ci puisse profiter des avancées.
+
+image::content/img/yed/slide-git-rebase-002.svg[width=100%, scaledwidth=100%, align=center]
+
+<<<
+
+=== Disposer d'un nouvelle base
+
+Cette opération s'effectue avec la commande +git rebase+ suivie du nom de la branche d'où l'on souhaite (re)partir et du nom de la branche qui va en profiter.
+
+```shell
+
+git rebase master rwd
+
+```
+
+L'opération rejoue les commits de la branche qui va en profiter à partir de la nouvelle base.
+
+WARNING: Cette opération peut apporter son lot de conflits au même titre qu'un +merge+, mais ce n'est pas la même opération.
+
+<<<
+
+=== Changer les événements
+
+Si il est possible de rejouer des commits sur une autre branche, est-ce possible sur une même branche ?
+
+C'est le cas et cela permet de changer les événements qui ont eu lieu sur une même branche.
+
+image::content/img/yed/slide-git-rebase-003.svg[width=100%, scaledwidth=100%, align=center]
+
+Cette opération s'effectue avec la commande +git rebase -i+ suivie du SHA1 du commit qui va servir de point de départ.
+
+```shell
+
+git rebase -i 4bf582d
+
+```
+
+<<<
+
+=== Que peut-on changer ?
+
+Dans un rebase interactif plusieurs options sont possibles pour chaque commit :
+
+- pick : Rejouer un commit tel quel.
+- reword : Changer le message.
+- edit : préparer le commit mais laisser la possibilité à des changements.
+- squash : fusionner un commit avec le commit précédent.
+- fixup : fusionner un commit avec le commit précédent, sans garder la trace du message.
+- exec : exécuter une commande.
+- drop : supprimer un commit.
+
+WARNING: Le commit qui va servir de point de départ ne va être pris en compte.
+
+<<<
+
+=== Les conséquences
+
+Changer l'histoire c'est super puissant mais ça peut être très dangereux.
+
+Si vous changez une histoire qui a déjà été poussé sur un dépôt distant et que vous l'écrasez vous allez désynchroniser tous les autres ...
+

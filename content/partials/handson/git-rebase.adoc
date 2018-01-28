@@ -1,0 +1,13 @@
+image::content/img/programming_meme.png[width=100%, scaledwidth=35%, align=center]
+
+=== Exercices
+
+1. Si ce n'est déjà fait vous devez ajouter un dépôt distant "alvin" avec l'URL https://github.com/alvinberthelot/git_2018_B1.
+2. Vous devez synchroniser votre master avec la branche master du dépôt distant.
+3. Vous devez créer une branche "participation" et positionnez vous dessus.
+4. Vous devez modifier le fichier index.html pour qu'il affiche votre nom dans la liste d'étudiants. Vous devez commiter ce fichier.
+5. Profitez pour customiser le style CSS pour votre nom. Faites cette opération avec plein de commits.
+6. Si vous faisiez le ménage un peu dans vos commits.
+7. Il a fait quoi le prof pendant ce temps là ?. Resynchroniser votre master avec son dépôt.
+8. Refaites partir votre branche "partcipation" depuis cette nouvelle base.
+9. Bonus faites une "pull request" depuis GitHub.

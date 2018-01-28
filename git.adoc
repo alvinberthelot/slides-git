@@ -53,6 +53,12 @@ include::content/partials/git-shared.adoc[]
 <<<
 include::content/partials/handson/git-shared.adoc[]
 
+<<<
+include::content/partials/git-rebase.adoc[]
+
+<<<
+include::content/partials/handson/git-rebase.adoc[]
+
 //<<<
 //include::content/partials/git-great-features.adoc[]
 
