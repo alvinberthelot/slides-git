@@ -54,11 +54,11 @@ Dans un rebase interactif plusieurs options sont possibles pour chaque commit :
 
 - pick : Rejouer un commit tel quel.
 - reword : Changer le message.
-- edit : préparer le commit mais laisser la possibilité à des changements.
-- squash : fusionner un commit avec le commit précédent.
-- fixup : fusionner un commit avec le commit précédent, sans garder la trace du message.
-- exec : exécuter une commande.
-- drop : supprimer un commit.
+- edit : Préparer le commit mais laisser la possibilité à des changements.
+- squash : Fusionner un commit avec le commit précédent.
+- fixup : Fusionner un commit avec le commit précédent, sans garder la trace du message.
+- exec : Exécuter une commande.
+- drop : Supprimer un commit.
 
 WARNING: Le commit qui va servir de point de départ ne va être pris en compte.
 

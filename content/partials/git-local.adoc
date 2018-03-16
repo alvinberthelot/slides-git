@@ -85,7 +85,7 @@ git add pictures/*  // <4>
 <1> ajoute un unique fichier +index.html+
 <2> ajoute les fichier +index.html+ et +main.css+
 <3> ajoute tous les fichiers avec une extension +.js+
-<4> ajoute tous les fichiers se trouvant dant le répertoire +dist+
+<4> ajoute tous les fichiers se trouvant dant le répertoire +pictures+
 
 <<<
 

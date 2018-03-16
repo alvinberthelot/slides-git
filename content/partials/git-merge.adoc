@@ -56,7 +56,7 @@ image::content/img/yed/slide-git-merge-003.svg[width=100%, scaledwidth=100%, ali
 
 Cette stratégie s'appelle le "Fast Forward" :
 
-- *Avantage* : la lisibilité de l'histoire de la branche principale redevienne plus directe.
+- *Avantage* : la lisibilité de l'histoire de la branche principale est plus directe.
 - *Inconvénient* : on perd facilement la trace de la branche qui était à l'origine des commits.
 
 TIP: Il est possible de ne pas l'utiliser avec l'option +--no-ff+.
